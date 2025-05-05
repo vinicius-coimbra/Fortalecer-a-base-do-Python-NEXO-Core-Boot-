@@ -1,7 +1,15 @@
 import time
 
 while True:
-    print('[1] composiçáo do traje\n'
+    print('=' * 38 + '\n' +
+    'SISTEMA NEXO v1.0 - Núcleo de Ativação\n' +
+    '=' * 38)
+
+
+    print('\nSelecione um dos módulos do traje:\n')
+
+
+    print('\n[1] composiçáo do traje\n'
     '[2] protocolos de inicializacão\n'
     '[3] status de energia\n'
     '[5] reiniciar necleo\n'
@@ -24,10 +32,10 @@ while True:
              print('\nnucleo NEXO > composição do traje\n'
             '\n'
             'Camadas Ativadas:' + '\n'
-             '├─ [✓] Fibras de Carbono Vivas' + '\n' +
-             '├─ [✓] Liga Óssea Reforçada' + '\n' +
-             '├─ [✓] Núcleo Arcano de Condutividade' + '\n' +
-             '└─ [✓] Malha de Isolamento Sensorial' + '\n' +
+             '\033[1;31m├─ [✓]\033[m Fibras de Carbono Vivas' + '\n' +
+             '\033[1;31m├─ [✓]\033[m Liga Óssea Reforçada' + '\n' +
+             '\033[1;31m├─ [✓]\033[m Núcleo Arcano de Condutividade' + '\n' +
+             '\033[1;31m└─ [✓]\033[m Malha de Isolamento Sensorial' + '\n' +
              '\n' 
              'Notas do Portador:' + '\n'
              '“Cada material escolhido não apenas sustenta,' + '\n'
@@ -95,7 +103,7 @@ while True:
             '┌────────────────────────────────────────────┐\n'
             '│        Núcleo Energético: ONLINE           │\n'
             '│                                            │\n'
-            '│        Energia Atual: 73% [▓▓▓▓▓▓▓░░░░]    │\n'
+            '│        Energia Atual: 73% \033[1;31m[▓▓▓▓▓▓▓░░░░]\033[m    │\n'
             '│        Estabilidade: Moderada              │\n'
             '│        Última Carga Completa: 7h atrás     │\n'
             '│                                            │\n'
@@ -192,7 +200,7 @@ while True:
                 print('[■■■■■■■■■■] Etapa 6/6: Núcleo restaurado com sucesso.\n')
 
                 print('\n→ Estado atual: Estável\n'
-                '→ Energia inicializada em 100%\n'
+                '→ Energia inicializada em \033[1;31m100%\033[m\n'
                 '→ Memória temporária zerada\n') 
                 time.sleep(0.2)   
 
@@ -200,4 +208,4 @@ while True:
                 '"Todo recomeço carrega a lembrança do que foi perdido,\n'  
                 'mas também a força de quem decidiu continuar."\n')
 
-                input('\n[ENTER] pra continuar:')
+                input('\n[ENTER] pra continuar:')     
